@@ -1,0 +1,16 @@
+
+body {
+	background-color: #ffe968;
+}
+
+
+#centerIt {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+
+footer {
+	text-align: center;
+}

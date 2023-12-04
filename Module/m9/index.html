@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Artifact #4</title>
+  <!-- Include the external JavaScript file for form validation -->
+  <script src="validateForm.js" defer></script>
+</head>
+
+<body>
+  <h1>CONTACT US FORM</h1>
+  <!-- Update the form tag to call the validateForm() function on form submission -->
+  <form action="thankyou.html" onsubmit="return validateForm();" method="get">
+    <fieldset>
+      <legend>User Information</legend>
+      <label for="firstname">Enter Firstname (Max 20 characters) </label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" id="firstname" name="firstname" maxlength="20" required pattern="[A-Za-z]+">
+      <br>
+      <label for="lastname">Enter Lastname (Max 50 characters) </label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" id="lastname" name="lastname" maxlength="50" required pattern="[A-Za-z]+">
+      <br>
+      <label for="email">Enter Email</label>
+      <br>
+      <!-- Add the "pattern" attribute to trigger the provided email validation function -->
+      <input type="text" id="email" name="email">
+      <br>
+      <label for="phone">Enter Phone Number (Max 15 Characters) </label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" id="phone" name="phone" maxlength="15" required pattern="\d+">
+      <br>
+      <label for="username">Enter Username (Max 12 Characters)</label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" id="username" name="username" maxlength="12" required>
+      <br>
+      <label for="password">Enter Password (Max 7 Characters)</label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="password" id="password" name="password" maxlength="7" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Current Address</legend>
+      <label for="address">Enter Address</label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" name="address" id="address" size="50" required>
+      <br>
+      <label for="city">Enter City</label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" name="city" id="city" required>
+      <br>
+      <label for="countries">Choose Country</label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <select id="countries" name="countries" required>
+        <option>Canada</option>
+        <option>Mexico</option>
+        <option>United States</option>
+      </select>
+      <br>
+      <label for="zipcode">Enter zipcode</label>
+      <br>
+      <!-- Add the "required" attribute to make the field mandatory -->
+      <input type="text" name="zip" id="zipcode" required pattern="\d{5}">
+    </fieldset>
+
+    <fieldset>
+      <legend>Feel free to add comments</legend>
+      <textarea name="commentbox" id="commentbox" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <br>
+    <input id="submit" type="submit" value="Submit">
+    <input id="cancel" type="submit" value="Cancel">
+  </form>
+
+  <footer>
+    <br>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+    </a>
+  </footer>
+</body>
+
+</html>

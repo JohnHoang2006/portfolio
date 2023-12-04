@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+        </script>
+</head>
+<body style= "background-color: #000000; background-image: url('lain.gif');">
+    <iframe src="sounds/her.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio autoplay loop >
+        <source src="sounds/her.mp3" type="audio/mpeg">
+      </audio>  
+
+      <script>
+        window.onload = function() {
+            var audio = document.getElementsByTagName("audio");
+            audio[0].click();
+        }
+        </script>
+
+<audio autoplay loop>
+    <source src="sounds/her.mp3" 
+  </audio>    
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+html {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #eee; /* Fills the page */
+  }
+
+  .navmenu li {
+    border: 20px solid #a0a0a0;
+    margin: auto;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Carrois Gothic', sans-serif;
+    display: inline; 
+  }
+
+  .centertext {
+    text-align: center;
+    margin: auto
+  }
+
+  .heading {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .title {
+    text-align: center;
+    font-size:40px;
+    margin: auto;
+  }

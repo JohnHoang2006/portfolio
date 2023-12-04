@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="title"
+         <h1>Contact Me</h1>
+    </div>
+    <br>
+        <div class="navmenu">
+             <nav>
+                <ul>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="CourseWork.html">CourseWork</a></li>
+                    <li><a href="Artifact.html">Artifact</a></li>
+                    <li><a href="Module Assignment.html">Module Assignment</a></li>
+                    <li><a href="Contact Me.html">Contact Me</a></li>
+                    <li><a href="My Creative Page.html">My Creative Page</a></li>
+                </ul>
+            </nav>
+        </div>   
+    <br> 
+    <form action="ThankYou.html">
+        <label for="fname">Fullname:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Email:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+      <form action="thankyou.html" onsubmit="return validateForm();" method="get">
+        <fieldset>
+          <legend>User Information</legend>
+          <label for="firstname">Enter Firstname (Max 20 characters) </label>
+          <br>
+          <input type="text" id="firstname" name="firstname" maxlength="20" required pattern="[A-Za-z]+">
+          <br>
+          <label for="lastname">Enter Lastname (Max 50 characters) </label>
+          <br>
+          <input type="text" id="lastname" name="lastname" maxlength="50" required pattern="[A-Za-z]+">
+          <br>
+          <label for="email">Enter Email</label>
+          <br>
+          <input type="text" id="email" name="email">
+          <br>
+          <label for="phone">Enter Phone Number (Max 15 Characters) </label>
+          <br>
+        </fieldset>
+        <fieldset>
+          <legend>Feel free to add comments</legend>
+          <textarea name="commentbox" id="commentbox" rows="4" cols="50"></textarea>
+        </fieldset>
+    
+        <br>
+        <input id="submit" type="submit" value="Submit">
+        <input id="cancel" type="submit" value="Cancel">
+      </form>
+
+</body>
+</html>
