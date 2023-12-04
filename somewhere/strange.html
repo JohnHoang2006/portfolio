@@ -10,20 +10,20 @@
           var context = new AudioContext();
         }
         </script>
-</head>
-<body style= "background-color: #000000; background-image: url('lain.gif');">
-    <iframe src="sounds/her.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio autoplay loop >
-        <source src="sounds/her.mp3" type="audio/mpeg">
-      </audio>  
-
-      <script>
-        window.onload = function() {
-            var audio = document.getElementsByTagName("audio");
-            audio[0].click();
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* This ensures that the background covers the entire viewport */
+            background: url('lain.gif') no-repeat center center fixed;
+            background-size: cover;
         }
-        </script>
-
+    </style>
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+    </script>
+</head>
 <audio autoplay loop>
     <source src="sounds/her.mp3" 
   </audio>    
