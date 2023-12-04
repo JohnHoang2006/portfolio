@@ -1,0 +1,25 @@
+body {
+    background-image:url("https://img.freepik.com/premium-vector/colorful-random-shapes-abstract-background-geometrical-circle-background-with-copy-space-yellow_655111-46.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'FuturaRennerRegular';
+    font-weight: bold;
+    font-style: normal;
+    color: blueviolet;
+}
+
+.column1 {
+    color: #fff!important;
+    background-color: #0066ff!important
+}
+
+.column2 {
+    background-color: #1eff00!important
+}
+
+.column3 {
+    background-color: #ff3300!important
+}
